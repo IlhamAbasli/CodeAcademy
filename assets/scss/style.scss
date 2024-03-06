@@ -620,4 +620,288 @@ p{
 }
 
 #feedbacks{
+    padding-top: 100px;
+    h1{
+        font-family: VisbyLight;
+        color: #4A4A4A;
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        span{
+            font-family: VisbyHeavy;
+        }     
+    }
+
+    .swiper-slide{
+        cursor: grab;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align:center;
+            font-family: VisbyLight;
+            font-style: italic;
+            width: 935px;
+            font-size: 19px;
+        }
+        .graduate{
+            margin-top: 25px;
+            display: flex;
+            gap: 20px;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+            .about{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h6{
+                    font-size: 21px;
+                    font-family: VisbyHeavy;
+                    color: #4A4A4A;
+                }
+                span{
+                    font-family: VisbyLight;
+                    font-size: 14px;
+                    color: #8f8f8f;
+                }
+            }
+        }
+    }
 }
+
+
+#partners{
+    padding-top: 100px;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-family: VisbyLight;
+            line-height: 35px;
+            color: #4A4A4A;
+            span{
+                font-family: VisbyHeavy;
+            }
+        }
+        p{
+            font-family: VisbyLight;
+            font-size: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            width: 500px;
+        }
+        img{
+            padding-bottom: 15px;
+        }
+
+        .partner-logos{
+            display: flex;
+            .image{
+                width: 190px;
+                height: 127px;
+                padding: 30px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+
+#our-graduates{
+    padding-top: 100px;
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-family: VisbyHeavy;
+            line-height: 45px;
+            color: #4A4A4A;
+            span{
+                font-family: VisbyLight;
+            }
+        }   
+        .line{
+            margin-top: 15px;
+            margin-bottom: 30px;
+            width: 130px;
+            height: 4px;
+            background-color: #FFCD05;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        .item{
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            transition: all .6s ease-in-out;
+            transform-style: preserve-3d;
+            position: relative;
+            img{
+                overflow: hidden;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            &:hover{
+                transform: rotateX(180deg);
+                .flipped{
+                    display: block;
+                }
+            }
+            &:nth-child(1):hover{
+                .flipped{
+                    background-color: #00b45aCC;
+                }
+            }
+            &:nth-child(2):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(3):hover{
+                .flipped{
+                    background-color: #00b45aCC;
+                }
+            }
+            &:nth-child(4):hover{
+                .flipped{
+                    background-color: #872891CC;
+                }
+            }
+            &:nth-child(5):hover{
+                .flipped{
+                    background-color: #872891CC;
+                }
+            }
+            &:nth-child(6):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(7):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(8):hover{
+                .flipped{
+                    background-color: #872891CC;
+                }
+            }
+            &:nth-child(9):hover{
+                .flipped{
+                    background-color: #872891CC;
+                }
+            }
+            &:nth-child(10):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(11):hover{
+                .flipped{
+                    background-color: #00b45aCC;
+                }
+            }
+            &:nth-child(12):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(13):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(14):hover{
+                .flipped{
+                    background-color: #2382c8CC;
+                }
+            }
+            &:nth-child(15):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(16):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(17):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(18):hover{
+                .flipped{
+                    background-color: #ffcd05CC;
+                }
+            }
+            &:nth-child(19):hover{
+                .flipped{
+                    background-color: #2382c8CC;
+                }
+            }
+            &:nth-child(20):hover{
+                .flipped{
+                    background-color: #00b45aCC;
+                }
+            }
+            &:nth-child(21):hover{
+                .flipped{
+                    background-color: #00b45aCC;
+                }
+            }
+            .flipped{
+                display: none;
+                padding: 15px;
+                width: 100%;
+                height: 100%;
+                opacity: 0.9;
+                position: absolute;
+                top: 0;
+                left: 0;
+                h6{
+                    font-size: 21px;
+                    color: white;
+                    font-family: VisbyHeavy;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 12px;
+                    color: white;
+                    font-family: VisbyLight;
+                }
+                i{
+                    color: white;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+

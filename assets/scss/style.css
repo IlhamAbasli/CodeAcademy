@@ -561,4 +561,246 @@ p {
   height: 70px;
   text-align: center;
   line-height: 40px;
+}
+
+#feedbacks {
+  padding-top: 100px;
+}
+#feedbacks h1 {
+  font-family: VisbyLight;
+  color: #4A4A4A;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+#feedbacks h1 span {
+  font-family: VisbyHeavy;
+}
+#feedbacks .swiper-slide {
+  cursor: grab;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#feedbacks .swiper-slide p {
+  text-align: center;
+  font-family: VisbyLight;
+  font-style: italic;
+  width: 935px;
+  font-size: 19px;
+}
+#feedbacks .swiper-slide .graduate {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+#feedbacks .swiper-slide .graduate img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#feedbacks .swiper-slide .graduate .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#feedbacks .swiper-slide .graduate .about h6 {
+  font-size: 21px;
+  font-family: VisbyHeavy;
+  color: #4A4A4A;
+}
+#feedbacks .swiper-slide .graduate .about span {
+  font-family: VisbyLight;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+#partners {
+  padding-top: 100px;
+}
+#partners .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#partners .content h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: VisbyLight;
+  line-height: 35px;
+  color: #4A4A4A;
+}
+#partners .content h1 span {
+  font-family: VisbyHeavy;
+}
+#partners .content p {
+  font-family: VisbyLight;
+  font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 500px;
+}
+#partners .content img {
+  padding-bottom: 15px;
+}
+#partners .content .partner-logos {
+  display: flex;
+}
+#partners .content .partner-logos .image {
+  width: 190px;
+  height: 127px;
+  padding: 30px;
+}
+#partners .content .partner-logos .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#our-graduates {
+  padding-top: 100px;
+}
+#our-graduates .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#our-graduates .header h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: VisbyHeavy;
+  line-height: 45px;
+  color: #4A4A4A;
+}
+#our-graduates .header h1 span {
+  font-family: VisbyLight;
+}
+#our-graduates .header .line {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 130px;
+  height: 4px;
+  background-color: #FFCD05;
+}
+#our-graduates .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#our-graduates .content .item {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  transition: all 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+#our-graduates .content .item img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#our-graduates .content .item:hover {
+  transform: rotateX(180deg);
+}
+#our-graduates .content .item:hover .flipped {
+  display: block;
+}
+#our-graduates .content .item:nth-child(1):hover .flipped {
+  background-color: rgba(0, 180, 90, 0.8);
+}
+#our-graduates .content .item:nth-child(2):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(3):hover .flipped {
+  background-color: rgba(0, 180, 90, 0.8);
+}
+#our-graduates .content .item:nth-child(4):hover .flipped {
+  background-color: rgba(135, 40, 145, 0.8);
+}
+#our-graduates .content .item:nth-child(5):hover .flipped {
+  background-color: rgba(135, 40, 145, 0.8);
+}
+#our-graduates .content .item:nth-child(6):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(7):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(8):hover .flipped {
+  background-color: rgba(135, 40, 145, 0.8);
+}
+#our-graduates .content .item:nth-child(9):hover .flipped {
+  background-color: rgba(135, 40, 145, 0.8);
+}
+#our-graduates .content .item:nth-child(10):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(11):hover .flipped {
+  background-color: rgba(0, 180, 90, 0.8);
+}
+#our-graduates .content .item:nth-child(12):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(13):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(14):hover .flipped {
+  background-color: rgba(35, 130, 200, 0.8);
+}
+#our-graduates .content .item:nth-child(15):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(16):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(17):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(18):hover .flipped {
+  background-color: rgba(255, 205, 5, 0.8);
+}
+#our-graduates .content .item:nth-child(19):hover .flipped {
+  background-color: rgba(35, 130, 200, 0.8);
+}
+#our-graduates .content .item:nth-child(20):hover .flipped {
+  background-color: rgba(0, 180, 90, 0.8);
+}
+#our-graduates .content .item:nth-child(21):hover .flipped {
+  background-color: rgba(0, 180, 90, 0.8);
+}
+#our-graduates .content .item .flipped {
+  display: none;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#our-graduates .content .item .flipped h6 {
+  font-size: 21px;
+  color: white;
+  font-family: VisbyHeavy;
+  margin-bottom: 5px;
+}
+#our-graduates .content .item .flipped p {
+  font-size: 12px;
+  color: white;
+  font-family: VisbyLight;
+}
+#our-graduates .content .item .flipped i {
+  color: white;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
