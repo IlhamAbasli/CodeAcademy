@@ -13,6 +13,7 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
+
 .container-main{
     width: 95%;
     margin: 0 auto;
@@ -26,7 +27,6 @@ p{
     margin: 0;
     padding: 0;
 }
-
 
 #header-top{
     .address{
@@ -123,64 +123,64 @@ p{
         width: 100%;
         height: 100%;
         display: flex;
-        position: relative;
         justify-content: center;
         align-items: center;
         i{
             font-size: 29px;
             cursor: pointer;
         }
-    }
-
-    .sub-drop-menu{
-        font-family: VisbyHeavy;
-        position: absolute;
-        z-index: 0;
-        opacity: 0;
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-        ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            li{
-                display: flex;
-                justify-content: space-between;
-                padding: 18px 15px;
-                margin-left: 15px;
-                border-bottom: 1px solid #d3d3d54a;
-                a{
-                   text-decoration: none;
-                   color: #323232;
-                   letter-spacing: 1.3px;
-                }
-                i{
-                    font-size: 20px;
-                    padding-right: 50px;
+        .sub-drop-menu{
+            transform: translateY(-1000px);
+            font-family: VisbyHeavy;
+            position: fixed;
+            left: 0;
+            top: 80px;
+            z-index: -1;
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 18px 15px;
+                    margin-left: 15px;
+                    border-bottom: 1px solid #d3d3d54a;
+                    a{
+                       text-decoration: none;
+                       color: #323232;
+                       letter-spacing: 1.3px;
+                    }
+                    i{
+                        font-size: 20px;
+                        padding-right: 50px;
+                    }
                 }
             }
         }
-    }
-
-    .active-drop{
-        display: block;
-        opacity: 1;
-        z-index: 2;
-        animation-name: dropOpen;
-        animation-duration: 0.5s;
-    }
+        .active-drop{
+            display: block;
+            animation-name: dropOpen;
+            animation-duration: 0.5s;
+            transform: translateY(0px);
+        }
+        
+        .passive-drop{
+            animation-name: dropClose;
+            animation-duration: 1s;
+            transform: translateY(-1000px);
+        }
     
-    .passive-drop{
-        animation-name: dropClose;
-        animation-duration: 0.5s;
     }
 }
 
 
 @keyframes dropOpen {
     from{
-        transform: translateY(-100px)
+        transform: translateY(-1000px)
     }
     to{
         transform: translateY(0px);
@@ -190,11 +190,9 @@ p{
 @keyframes dropClose{
     from{
         transform: translateY(0px);
-        opacity: 1;
     }
     to{
-        transform: translateY(-100px);
-        opacity: 0;
+        transform: translateY(-1000px);
     }
 }
 
@@ -296,19 +294,8 @@ p{
 
 
     .swiper {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
         .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             img {
-                display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -402,23 +389,7 @@ p{
 
 
 
-@media (max-width: 992px) {
-    .container-main{
-        width: 100%;
-    }
-    .container-body{
-        width: 95%;
-    }
-    #header-bottom{
-        .swiper{
-            .swiper-slide{
-                img{
-                    height: 416px;
-                }
-            }
-        }
-    }
-}
+
 
 
 #fields{
@@ -455,9 +426,6 @@ p{
             padding: 12px 20px;
             border: 1px solid #d3d3d54a;
             cursor: pointer;
-            img{
-
-            }
             h4{
                 color: #4A4A4A;
                 font-family: VisbyHeavy;
@@ -550,13 +518,13 @@ p{
         }
         .right-side{
             h4{
-                width: 286px;
+                width: 100%;
                 font-family: VisbyHeavy;
                 font-size: 21px;
                 cursor: pointer;
             }
             p{
-                width: 286px;
+                width: 100%;
                 font-family: VisbyLight;
                 font-size: 16px;
                 color: #323232;
@@ -576,7 +544,7 @@ p{
 
 #report{
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-image: url(../images/code-academy-bg.jpeg);
     background-attachment: fixed;
     background-position: center;
@@ -596,8 +564,8 @@ p{
             width: 100%;
             justify-content: space-between;
             .item{
-                width: 260px;
-                height: 160px;
+                width: 100%;
+                height: 100%;
                 padding: 10px;
                 h2{
                     font-family: VisbyHeavy;
@@ -610,7 +578,7 @@ p{
                     color: white;
                     font-family: VisbyLight;
                     width: 100%;
-                    height: 70px;
+                    height: 90px;
                     text-align: center;
                     line-height: 40px;
                 }
@@ -642,7 +610,7 @@ p{
             text-align:center;
             font-family: VisbyLight;
             font-style: italic;
-            width: 935px;
+            width: 100%;
             font-size: 19px;
         }
         .graduate{
@@ -694,6 +662,7 @@ p{
             }
         }
         p{
+            width: 100%;
             font-family: VisbyLight;
             font-size: 15px;
             padding-top: 30px;
@@ -707,13 +676,16 @@ p{
 
         .partner-logos{
             display: flex;
+            justify-content: center;
+            align-items: center;
             .image{
-                width: 190px;
-                height: 127px;
-                padding: 30px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
                 img{
-                    width: 100%;
-                    height: 100%;
+                    padding: 30px;
+                    width: 190px;
+                    height: 127px;
                     object-fit: contain;
                 }
             }
@@ -749,6 +721,8 @@ p{
     }
 
     .content{
+        width: 100%;
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
@@ -756,7 +730,7 @@ p{
             cursor: pointer;
             width: 150px;
             height: 150px;
-            transition: all .6s ease-in-out;
+            transition: all 1s ease-in-out;
             transform-style: preserve-3d;
             position: relative;
             img{
@@ -766,7 +740,7 @@ p{
                 height: 100%;
             }
             &:hover{
-                transform: rotateX(180deg);
+                transform: rotateX(360deg);
                 .flipped{
                     display: block;
                 }
@@ -905,3 +879,70 @@ p{
     }
 }
 
+
+
+
+@media (max-width: 998px) {
+    .container-main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-body{
+        width: 95%;
+    }
+
+    #header-top{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 3;
+    }
+    #header-bottom{
+        padding-top: 80px;
+        .swiper{
+            .swiper-slide{
+                img{
+                    height: 416px;
+                }
+            }
+        }
+    }
+
+    #about{
+        .content{
+            p{
+                width: 100%;
+            }
+        }
+    }
+
+    #fields{
+        .subjects{
+            margin-top: 20px;
+            .item{
+                width: 100%;
+                border: none;
+                border-top: 1px solid #d3d3d54a;
+                border-bottom: 1px solid #d3d3d54a;
+            }
+        }
+    }
+
+    #partners{
+        .content{
+            p{
+                width: 100%;
+            }
+        }
+    }
+    #report{
+        .content{
+            padding: 0;
+            h4{
+                width: 100%;
+                padding: 0;
+                padding: 50px 0px;  
+            }
+        }
+    }
+}
