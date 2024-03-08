@@ -23,13 +23,7 @@ const searchClose = document.querySelector(".search-area .search-input i");
 searchBtn.addEventListener("click",function(){
   searchArea.classList.add("active");
   searchInput.classList.remove("passive");
-})
-
-searchInput.addEventListener("click",function(){
-  searchArea.classList.remove("active");
-  searchInput.classList.add("passive");
-})
-
+})  
 
 searchClose.addEventListener("click", function(){
   searchArea.classList.remove("active");
