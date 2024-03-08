@@ -23,6 +23,12 @@
     width: 60%;
     margin: 0 auto;
 }
+
+.container-contact{
+    width: 80%;
+    margin: 0 auto;
+}
+
 p{
     margin: 0;
     padding: 0;
@@ -153,6 +159,7 @@ p{
                        text-decoration: none;
                        color: #323232;
                        letter-spacing: 1.3px;
+                       font-family: VisbyLight;
                     }
                     i{
                         font-size: 20px;
@@ -294,6 +301,7 @@ p{
 
 
     .swiper {
+        width: 100%;
         .swiper-slide {
             img {
                 width: 100%;
@@ -411,7 +419,7 @@ p{
         }
         p{
             font-family: VisbyLight;
-            width: 450px;
+            width: 100%;
         }
     }
 
@@ -879,9 +887,67 @@ p{
     }
 }
 
+#contact-us{
+    margin-top: 100px;
+    width: 100%;
+    padding: 100px 200px;
+    background-color: #f4f5f8;
+    .content{
+        width: 100%;
+        h1,h2{
+            padding: 0;
+            margin: 0;
+            font-size: 50px;
+            color: #4A4A4A;
+            font-family: VisbyLight;
+        }
+        h2{
+            padding-left: 50px;
+            font-family: VisbyHeavy;
+        }
+        p{
+            padding-top: 20px;
+            font-size: 15px;
+            font-family: VisbyLight;
+        }
+    }
 
-
-
+    .inputs{
+        input{
+            width: 100%;
+            font-family: VisbyLight;
+            font-size: 18px;
+            min-height: 59px;
+            padding: 7px 20px;
+            border: none;
+            border-radius: 0;
+            &:focus{
+                box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+                border: none;
+            }
+        }
+        select{
+            min-height: 59px;
+            padding: 7px 20px;
+            border-radius: 0;
+            border: none;
+            &:focus{
+                box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+                border: none;
+            }
+        }
+        button{
+            width: 100%;
+            background-color: #fcba00;
+            padding: 12px 24px;
+            font-family: VisbyHeavy;
+            font-size: 18px;
+            color: white;
+            margin-top: 10px;
+            border: none;
+        }
+    }
+}
 @media (max-width: 998px) {
     .container-main{
         width: 100%;
@@ -889,6 +955,7 @@ p{
     }
     .container-body{
         width: 95%;
+        margin: 0 auto;
     }
 
     #header-top{
@@ -902,6 +969,7 @@ p{
         .swiper{
             .swiper-slide{
                 img{
+                    width: 100%;
                     height: 416px;
                 }
             }
@@ -942,6 +1010,46 @@ p{
                 width: 100%;
                 padding: 0;
                 padding: 50px 0px;  
+            }
+        }
+    }
+
+    #contact-us{
+        padding: 40px 20px;
+        .content{
+            h1,h2{
+                font-size: 30px;
+                padding: 0;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:1024px) and (max-width: 1440px) {
+    .container-body{
+        width: 90%;
+    }
+    #contact-us{
+        padding: 100px 200px;
+        .content{
+            h1,h2{
+                padding: 0;
+            }
+            h2{
+                padding-left: 30px;
+            }
+            p{
+                display: block;
+            }
+        }
+        .inputs{
+            select{
+                padding: 7px 10px;
             }
         }
     }

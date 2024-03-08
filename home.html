@@ -37,33 +37,81 @@
                             <a href="">Müraciət et</a>
                         </div>
                     </div>
-
-                    <div class="d-lg-none d-block col-6">
+                    <div class="d-block d-lg-none col-6">
                         <div class="logo-mobile">
                             <img src="./assets/images/logo-mobile.png" alt="">
                         </div>
                     </div>
 
-                    <div class="d-lg-none d-block col-3">
+                    <div class="d-block d-lg-none col-3">
                         <div class="contacts-mobile">
                             <i class="fa-brands fa-whatsapp"></i>
                             <i class="fa-solid fa-phone"></i>
                         </div>
                     </div>
 
-                    <div class="d-lg-none d-block col-3">
+                    <div class="d-block d-lg-none col-3">
                         <div class="drop-menu">
                             <i class="fa-solid fa-bars open"></i>
                             <i class="fa-solid fa-xmark close d-none"></i>
                             <div class="row">
-                                <div class="d-lg-none d-block col-12">
+                                <div class="d-lg-none col-12">
                                     <div class="sub-drop-menu">
-                                        <ul>
-                                            <li><a href="">Akademiya</a><i class="fa-solid fa-plus"></i></li>
-                                            <li><a href="">Tədris sahələri</a><i class="fa-solid fa-plus"></i></li>
-                                            <li><a href="">Korporativ</a></li>
-                                            <li><a href="">Əlaqə</a></li>
-                                        </ul>
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Akademiya
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="">Haqqımızda</a></li>
+                                                        <li><a href="">Akademik Partnyorlar</a></li>
+                                                        <li><a href="">Karyera və Talant Mərkəzi</a></li>
+                                                        <li><a href="">Təhsil Modeli</a></li>
+                                                        <li><a href="">Məzunlarımız</a></li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Tədris sahələri
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li><a href="">Digital Marketinq</a></li>
+                                                        <li><a href="">Proqramlaşdırma</a></li>
+                                                        <li><a href="">Dizayn</a></li>
+                                                        <li><a href="">IT və Kiber Təhlükəsizlik</a></li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Korporativ
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Əlaqə
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                </div>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -113,17 +161,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><img src="./assets/images/Design_Web.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="./assets/images/Digital_Web.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="./assets/images/Programming_Web.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="./assets/images/System_Web.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="./assets/images/Code-Academy_SM_Konfidensial_002_1820x800-1-1.png" alt=""></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
+                    
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./assets/images/Design_Web.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./assets/images/Digital_Web.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./assets/images/Programming_Web.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./assets/images/System_Web.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./assets/images/Code-Academy_SM_Konfidensial_002_1820x800-1-1.png" alt=""></div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -564,12 +613,77 @@
                 </div>
             </div>
         </section>
+        
+        <section id="contact-us">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="content">
+                        <h1>sualın var?</h1>
+                        <h2>gəl görüşək!</h2>
+                        <p>Yüz dəfə eşitməkdənsə, bir dəfə görmək yaxşıdır. Bizimlə görüş təyin et, dərslərimiz, müəllimlərimiz və tədris prosesimizlə şəxsən tanış ol.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12 mt-4">
+                    <div class="col-lg-6 col-12">
+                        <div class="inputs">
+                            <div class="row row-gap-2">
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" class="form-control" placeholder="Ad">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" class="form-control" placeholder="Soyad">
+                                </div>
+                            </div>
+                            <div class="row mt-2 row-gap-2">
+                                <div class="col-lg-3 col-12">
+                                    <select name="" id="" class="form-select">
+                                        <option value="1">010</option>
+                                        <option value="2">050</option>
+                                        <option value="3">051</option>
+                                        <option value="4">055</option>
+                                        <option value="5">060</option>
+                                        <option value="6">070</option>
+                                        <option value="7">077</option>
+                                        <option value="8">099</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-12">
+                                    <input type="text" class="form-control" placeholder="XXX-XX-XX">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <select name="" id="" class="form-select">
+                                        <option value="1">Full stack back-end</option>
+                                        <option value="2">Full stack front-end</option>
+                                        <option value="3">Kiber Təhlükəsizlik</option>
+                                        <option value="4">UX/UI Dizayn</option>
+                                        <option value="5">2D Motion Dizayn</option>
+                                        <option value="6">Qrafik Dizayn və Vizual Kommunikasiyalar</option>
+                                        <option value="7">Digital Marketing Professional - DMI Pro</option>
+                                        <option value="8">Digital Memarlıq və 3D</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button>Müraciət Et</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=""></section>
     </main>
 
 
 
 
     <script src="https://kit.fontawesome.com/83dcd321a4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
