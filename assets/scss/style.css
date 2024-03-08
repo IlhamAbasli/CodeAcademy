@@ -699,10 +699,14 @@ p {
   height: 100%;
 }
 #our-graduates .content .item:hover {
-  transform: rotateX(360deg);
+  transform: rotateX(180deg);
+}
+#our-graduates .content .item:hover img {
+  transform: rotateX(-180deg);
 }
 #our-graduates .content .item:hover .flipped {
   display: block;
+  transform: rotateX(-180deg);
 }
 #our-graduates .content .item:nth-child(1):hover .flipped {
   background-color: rgba(0, 180, 90, 0.8);
@@ -852,6 +856,90 @@ p {
   border: none;
 }
 
+#footer-menu {
+  padding-top: 150px;
+}
+#footer-menu h6 {
+  margin: 0;
+  font-size: 14px;
+  padding: 0 0 10px 20px;
+  color: #323232;
+  font-family: VisbyHeavy;
+}
+#footer-menu ul {
+  padding: 0;
+  list-style: none;
+}
+#footer-menu ul li {
+  padding: 5px 20px;
+}
+#footer-menu ul li a {
+  font-size: 13px;
+  font-family: VisbyLight;
+  text-decoration: none;
+  color: #8f8f8f;
+}
+
+#direction {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #f4f5f8;
+}
+#direction p {
+  font-size: 15px;
+  padding: 30px 0;
+  font-family: VisbyLight;
+  width: 100%;
+  text-align: center;
+}
+#direction p span {
+  cursor: pointer;
+  font-family: VisbyHeavy;
+}
+
+#footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer-bottom .copyright {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#footer-bottom .copyright p {
+  font-size: 13px;
+  font-family: VisbyLight;
+}
+#footer-bottom .logo {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+}
+#footer-bottom .logo img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#footer-bottom .socials {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+#footer-bottom .socials i {
+  transition: 0.5s;
+  cursor: pointer;
+}
+#footer-bottom .socials i:hover {
+  transform: translateY(10px);
+}
+
 @media (max-width: 998px) {
   .container-main {
     width: 100%;
@@ -907,6 +995,40 @@ p {
   #contact-us .content p {
     display: none;
   }
+  #footer-menu {
+    padding: 25px 50px 5px;
+  }
+  #footer-menu h6 {
+    margin: 0;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #323232;
+    font-family: VisbyHeavy;
+  }
+  #footer-menu ul {
+    padding: 0;
+    list-style: none;
+  }
+  #footer-menu ul li {
+    padding: 10px 20px;
+  }
+  #footer-menu ul li a {
+    font-size: 13px;
+    font-family: VisbyLight;
+    text-decoration: none;
+    color: #8f8f8f;
+  }
+  #footer-menu ul li:hover {
+    background-color: #55595c;
+    cursor: pointer;
+  }
+  #footer-menu ul li:hover a {
+    color: white;
+  }
+  #footer-bottom .socials {
+    padding-top: 15px;
+    justify-content: center;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .container-body {
@@ -925,6 +1047,6 @@ p {
     display: block;
   }
   #contact-us .inputs select {
-    padding: 7px 10px;
+    padding: 7px 5px;
   }
 }/*# sourceMappingURL=style.css.map */
